@@ -1,0 +1,95 @@
+{
+  "groups": [
+    {
+      "name": "boot.admin",
+      "type": "com.hb0730.boot.admin.configuration.properties.BootAdminProperties",
+      "sourceType": "com.hb0730.boot.admin.configuration.properties.BootAdminProperties"
+    },
+    {
+      "name": "boot.admin.token-config",
+      "type": "com.hb0730.boot.admin.token.configuration.TokenProperties",
+      "sourceType": "com.hb0730.boot.admin.token.configuration.TokenProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "boot.admin.address-enabled",
+      "type": "java.lang.Boolean",
+      "description": "获取地址",
+      "sourceType": "com.hb0730.boot.admin.configuration.properties.BootAdminProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "boot.admin.copyright-year",
+      "type": "java.lang.String",
+      "description": "版权年份",
+      "sourceType": "com.hb0730.boot.admin.configuration.properties.BootAdminProperties"
+    },
+    {
+      "name": "boot.admin.demo-enabled",
+      "type": "java.lang.Boolean",
+      "description": "实例演示开关",
+      "sourceType": "com.hb0730.boot.admin.configuration.properties.BootAdminProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "boot.admin.name",
+      "type": "java.lang.String",
+      "description": "项目名称",
+      "sourceType": "com.hb0730.boot.admin.configuration.properties.BootAdminProperties"
+    },
+    {
+      "name": "boot.admin.token-config",
+      "type": "com.hb0730.boot.admin.token.configuration.TokenProperties",
+      "sourceType": "com.hb0730.boot.admin.configuration.properties.BootAdminProperties"
+    },
+    {
+      "name": "boot.admin.token-config.expire-time",
+      "type": "java.lang.Long",
+      "description": "过期时长",
+      "sourceType": "com.hb0730.boot.admin.token.configuration.TokenProperties",
+      "defaultValue": 30
+    },
+    {
+      "name": "boot.admin.token-config.header",
+      "type": "java.lang.String",
+      "description": "令牌自定义标识",
+      "sourceType": "com.hb0730.boot.admin.token.configuration.TokenProperties",
+      "defaultValue": "Authorization"
+    },
+    {
+      "name": "boot.admin.token-config.refresh-time",
+      "type": "java.lang.Long",
+      "description": "刷新时间",
+      "sourceType": "com.hb0730.boot.admin.token.configuration.TokenProperties",
+      "defaultValue": 30
+    },
+    {
+      "name": "boot.admin.token-config.secret",
+      "type": "java.lang.String",
+      "description": "加密",
+      "sourceType": "com.hb0730.boot.admin.token.configuration.TokenProperties",
+      "defaultValue": "abcdefghijklmnopqrstuvwxyz"
+    },
+    {
+      "name": "boot.admin.token-config.time-unit",
+      "type": "java.util.concurrent.TimeUnit",
+      "description": "过期时长类型",
+      "sourceType": "com.hb0730.boot.admin.token.configuration.TokenProperties"
+    },
+    {
+      "name": "boot.admin.token-config.token-prefix",
+      "type": "java.lang.String",
+      "description": "令牌前缀",
+      "sourceType": "com.hb0730.boot.admin.token.configuration.TokenProperties",
+      "defaultValue": "Bearer "
+    },
+    {
+      "name": "boot.admin.version",
+      "type": "java.lang.String",
+      "description": "版本",
+      "sourceType": "com.hb0730.boot.admin.configuration.properties.BootAdminProperties"
+    }
+  ],
+  "hints": []
+}
