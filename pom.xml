@@ -232,7 +232,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.hb0730.boot.admin.BootAdminApplication</mainClass>
+                    <mainClass>com.feng.boot.admin.BootAdminApplication</mainClass>
                     <includeSystemScope>true</includeSystemScope>
                 </configuration>
                 <executions>

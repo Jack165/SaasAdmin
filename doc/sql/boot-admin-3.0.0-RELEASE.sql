@@ -470,7 +470,7 @@ INSERT INTO `t_sys_dict_entry` VALUES (1, -1, '2020-09-10 01:41:56', NULL, NULL,
 truncate table `t_sys_job`;
 
 INSERT INTO `t_sys_job` VALUES (19, -1, '2020-09-08 00:24:33', -1, '2020-09-08 00:42:22', 0, 0, '', 1, '测试01', 'SYSTEM', 'taskTest', 'params', '{\"java.lang.String\":\"test\"}', '0/10 * * * * ?', '超级管理员', '1278032416@qq.com');
-INSERT INTO `t_sys_job` VALUES (3, -1, '2020-09-08 00:45:51', -1, '2020-09-08 00:46:07', 1, 1, '', 2, '測試02', 'SYSTEM', 'com.hb0730.boot.admin.project.system.quartz.handler.TaskTest', 'multipleParams', '{java.lang.String:test,java.lang.Boolean:true,java.lang.Long:123L,java.lang.Double:123.03D,java.lang.Integer:123}', '0/10 * * * * ?', '', '');
+INSERT INTO `t_sys_job` VALUES (3, -1, '2020-09-08 00:45:51', -1, '2020-09-08 00:46:07', 1, 1, '', 2, '測試02', 'SYSTEM', 'TaskTest', 'multipleParams', '{java.lang.String:test,java.lang.Boolean:true,java.lang.Long:123L,java.lang.Double:123.03D,java.lang.Integer:123}', '0/10 * * * * ?', '', '');
 
 -- ----------------------------
 -- Records of t_sys_job_log
