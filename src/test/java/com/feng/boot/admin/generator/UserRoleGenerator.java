@@ -13,7 +13,9 @@ import com.feng.boot.admin.domain.service.impl.SuperBaseServiceImpl;
 import java.util.ArrayList;
 import java.util.List;
 
-/**用户角色
+/**
+ * 用户角色
+ *
  * @author bing_huang
  */
 public class UserRoleGenerator {
@@ -49,7 +51,7 @@ public class UserRoleGenerator {
         mpg.setStrategy(strategyConfig);
         //包名配置
         PackageConfig packageConfig = new PackageConfig();
-        packageConfig.setParent("com.hb0730.boot.admin.project.system");
+        packageConfig.setParent("com.feng.boot.admin.project.system");
         packageConfig.setModuleName("user");
         packageConfig.setEntity("model.entity");
         packageConfig.setService("service");

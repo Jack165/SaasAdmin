@@ -33,13 +33,13 @@ public class DeptDTO extends BaseDTO {
     /**
      * 名称
      */
-    @NotBlank(message = "部门名称不为空" )
+    @NotBlank(message = "部门名称不为空")
     private String name;
 
     /**
      * 负责人
      */
-    @NotBlank(message = "部门负责人不为空" )
+    @NotBlank(message = "部门负责人不为空")
     private String leader;
 
     /**
@@ -60,8 +60,8 @@ public class DeptDTO extends BaseDTO {
     /**
      * 排序
      */
-    @Max(value = 999, message = "排序最大值为999" )
-    @Min(value = 0, message = "排序最小值为0" )
+    @Max(value = 999, message = "排序最大值为999")
+    @Min(value = 0, message = "排序最小值为0")
     private Integer sort;
 
     /**

@@ -1,8 +1,8 @@
 package com.feng.boot.admin.security.utils;
 
-import com.feng.boot.admin.security.model.User;
 import com.feng.boot.admin.security.configuration.WebSecurityConfig;
-import com.hb0730.commons.spring.SpringContextUtils;
+import com.feng.boot.admin.security.model.User;
+import com.feng.commons.spring.SpringContextUtils;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 import org.springframework.security.core.Authentication;

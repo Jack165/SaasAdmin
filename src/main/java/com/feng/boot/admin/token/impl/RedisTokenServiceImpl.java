@@ -1,16 +1,16 @@
 package com.feng.boot.admin.token.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.feng.boot.admin.commons.utils.JsonUtils;
 import com.feng.boot.admin.security.model.User;
-import com.feng.boot.admin.token.configuration.TokenProperties;
-import com.google.common.collect.Maps;
 import com.feng.boot.admin.token.AbstractTokenService;
-import com.hb0730.commons.cache.Cache;
-import com.hb0730.commons.json.exceptions.JsonException;
-import com.hb0730.commons.lang.StringUtils;
-import com.hb0730.commons.lang.collection.CollectionUtils;
-import com.hb0730.commons.lang.date.DateUtils;
+import com.google.common.collect.Maps;
+import com.feng.boot.admin.token.configuration.TokenProperties;
+import com.feng.commons.cache.Cache;
+import com.feng.commons.json.exceptions.JsonException;
+import com.feng.commons.json.utils.Jsons;
+import com.feng.commons.lang.StringUtils;
+import com.feng.commons.lang.collection.CollectionUtils;
+import com.feng.commons.lang.date.DateUtils;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -46,7 +46,7 @@ public class RedisTokenServiceImpl extends AbstractTokenService {
             Optional<Object> optional = cache.get(getUserTokenKey(userTokenKey));
             if (optional.isPresent()) {
                 try {
-                    return JsonUtils.getJson().jsonToObject(JsonUtils.getJson().objectToJson(optional.get()), User.class);
+                    return Jsons.JSONS.jsonToObject(Jsons.JSONS.objectToJson(optional.get()), User.class, jacksonObjectMapper);
                 } catch (JsonException e) {
                     e.printStackTrace();
                 }
@@ -132,7 +132,7 @@ public class RedisTokenServiceImpl extends AbstractTokenService {
                     String tokenKey = (String) optionalKey.get();
                     Optional<Object> optional = cache.get(getUserTokenKey(tokenKey));
                     if (optional.isPresent()) {
-                        User cacheUser = JsonUtils.getJson().jsonToObject(JsonUtils.getJson().objectToJson(optional.get()), User.class);
+                        User cacheUser = Jsons.JSONS.jsonToObject(Jsons.JSONS.objectToJson(optional.get()), User.class, jacksonObjectMapper);
                         maps.put(accessToken, cacheUser);
                     }
                 }

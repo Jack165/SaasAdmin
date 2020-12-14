@@ -1,9 +1,9 @@
 package com.feng.boot.admin.project.monitor.login.log.service;
 
+import com.feng.boot.admin.domain.service.ISuperBaseService;
 import com.feng.boot.admin.project.monitor.login.log.model.dto.LoginLogDTO;
 import com.feng.boot.admin.project.monitor.login.log.model.entity.LoginLogEntity;
 import com.feng.boot.admin.project.monitor.login.log.model.query.LoginLogParams;
-import com.feng.boot.admin.domain.service.ISuperBaseService;
 
 /**
  * 登录日志  服务类

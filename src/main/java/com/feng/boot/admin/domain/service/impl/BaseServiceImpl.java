@@ -5,11 +5,11 @@ import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.toolkit.ReflectionKit;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.feng.boot.admin.domain.model.entity.BusinessDomain;
 import com.feng.boot.admin.security.model.User;
 import com.feng.boot.admin.security.utils.SecurityUtils;
+import com.feng.boot.admin.domain.model.entity.BusinessDomain;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * 基类service(填充删除修改) <br>
@@ -25,7 +25,7 @@ public class BaseServiceImpl<MAPPER extends BaseMapper<ENTITY>, ENTITY> extends 
     public boolean update(Wrapper<ENTITY> updateWrapper) {
         if (updateWrapper instanceof UpdateWrapper) {
             UpdateWrapper<ENTITY> update = (UpdateWrapper<ENTITY>) updateWrapper;
-            update.set(BusinessDomain.UPDATE_TIME, LocalDateTime.now());
+            update.set(BusinessDomain.UPDATE_TIME, new Date());
             // 设置用户
             User currentUser = SecurityUtils.getCurrentUser();
             if (null != currentUser) {

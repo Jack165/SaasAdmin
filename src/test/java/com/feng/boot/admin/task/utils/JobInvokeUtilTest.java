@@ -1,8 +1,8 @@
 package com.feng.boot.admin.task.utils;
 
 import com.feng.boot.admin.task.domain.JobInvokeInfo;
-import com.hb0730.commons.json.exceptions.JsonException;
-import com.hb0730.commons.spring.SpringContextUtils;
+import com.feng.commons.json.exceptions.JsonException;
+import com.feng.commons.spring.SpringContextUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -40,7 +40,7 @@ public class JobInvokeUtilTest {
         JobInvokeUtil.invokeMethod(taskConstant);
 
         taskConstant.setMethod("obj");
-        taskConstant.setParams("{\"com.hb0730.boot.admin.project.system.quartz.handler.Test1\":{\"java.lang.Integer\":\"1\"}}");
+        taskConstant.setParams("{\"com.feng.boot.admin.project.system.quartz.handler.Test1\":{\"java.lang.Integer\":\"1\"}}");
         JobInvokeUtil.invokeMethod(taskConstant);
     }
 

@@ -1,8 +1,8 @@
 package com.feng.boot.admin.excel.utils;
 
 import com.alibaba.excel.support.ExcelTypeEnum;
-import com.feng.boot.admin.project.system.post.model.dto.PostExcelDTO;
 import com.google.common.collect.Lists;
+import com.feng.boot.admin.project.system.post.model.dto.PostExcelDTO;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -21,6 +21,6 @@ public class ExcelUtilsTest {
         data.add(new PostExcelDTO("S002", "全栈开发", 1, new Date()));
         data.add(new PostExcelDTO("S003", "全栈开发", 1, new Date()));
         data.add(new PostExcelDTO("S004", "全栈开发", 1, new Date()));
-        ExcelUtils.write(outputStream,data,ExcelTypeEnum.XLS,PostExcelDTO.class);
+        ExcelUtils.write(outputStream, data, ExcelTypeEnum.XLS, PostExcelDTO.class);
     }
 }

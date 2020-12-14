@@ -2,12 +2,12 @@ package com.feng.boot.admin.domain.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.feng.boot.admin.domain.model.entity.BaseDomain;
-import com.feng.boot.admin.domain.model.dto.BaseDTO;
-import com.feng.boot.admin.domain.model.query.BaseParams;
 import com.feng.boot.admin.domain.service.base.ISuperQueryService;
 import com.feng.boot.admin.domain.service.base.ISuperSaveService;
 import com.feng.boot.admin.domain.service.base.ISuperUpdateService;
+import com.feng.boot.admin.domain.model.dto.BaseDTO;
+import com.feng.boot.admin.domain.model.entity.BaseDomain;
+import com.feng.boot.admin.domain.model.query.BaseParams;
 import org.springframework.lang.NonNull;
 
 import java.io.Serializable;

@@ -2,11 +2,11 @@ package com.feng.boot.admin.project.system.user.service.impl;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.feng.boot.admin.commons.utils.PasswordSecurityUtils;
-import com.feng.boot.admin.project.system.user.model.dto.UserAccountDTO;
-import com.feng.boot.admin.project.system.user.model.query.UserAccountParams;
-import com.feng.boot.admin.project.system.user.service.IUserAccountService;
 import com.feng.boot.admin.project.ProjectTest;
-import com.hb0730.commons.spring.SpringContextUtils;
+import com.feng.boot.admin.project.system.user.model.query.UserAccountParams;
+import com.feng.boot.admin.project.system.user.model.dto.UserAccountDTO;
+import com.feng.boot.admin.project.system.user.service.IUserAccountService;
+import com.feng.commons.spring.SpringContextUtils;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -28,7 +28,7 @@ public class UserAccountServiceImplTest extends ProjectTest {
     private ApplicationContext context;
 
     @Before
-    public void init(){
+    public void init() {
         SpringContextUtils.setApplicationContext(context);
     }
 
@@ -82,8 +82,9 @@ public class UserAccountServiceImplTest extends ProjectTest {
     public void updatePasswordTest() {
         service.updatePassword(-1L, "123456", "123456");
     }
+
     @Test
-    public void updatePasswordTest2(){
+    public void updatePasswordTest2() {
         service.updatePassword(-1L, "123456567", "123456");
     }
 }

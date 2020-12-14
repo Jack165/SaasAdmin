@@ -32,7 +32,7 @@ public class JobEntity extends BaseDomain {
     /**
      * id
      */
-    @TableId(value = "id",type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     /**

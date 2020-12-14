@@ -9,7 +9,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * @author bing_huang
@@ -28,7 +28,7 @@ class Domain implements Serializable {
      * 创建时间
      */
     @TableField(value = "create_time", fill = FieldFill.INSERT)
-    private LocalDateTime createTime;
+    private Date createTime;
     /**
      * 修改者
      */
@@ -38,7 +38,7 @@ class Domain implements Serializable {
      * 修改时间
      */
     @TableField(value = "update_time", fill = FieldFill.UPDATE)
-    private LocalDateTime updateTime;
+    private Date updateTime;
 
     /**
      * 是否启用

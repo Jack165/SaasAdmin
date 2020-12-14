@@ -3,6 +3,14 @@ package com.feng.boot.admin.project.system.menu.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.feng.boot.admin.exceptions.LoginException;
+import com.feng.boot.admin.project.system.menu.model.dto.MenuDTO;
+import com.feng.boot.admin.project.system.menu.model.dto.TreeMenuDTO;
+import com.feng.boot.admin.project.system.menu.model.entity.MenuEntity;
+import com.feng.boot.admin.project.system.menu.model.query.MenuParams;
+import com.feng.boot.admin.project.system.menu.model.vo.MenuMetaVO;
+import com.feng.boot.admin.project.system.menu.model.vo.MenuPermissionVO;
+import com.feng.boot.admin.project.system.menu.model.vo.VueMenuVO;
 import com.feng.boot.admin.project.system.permission.mapper.IPermissionMapper;
 import com.feng.boot.admin.project.system.permission.model.entity.PermissionEntity;
 import com.feng.boot.admin.security.model.User;
@@ -13,23 +21,15 @@ import com.feng.boot.admin.commons.constant.RedisConstant;
 import com.feng.boot.admin.commons.enums.EnabledEnum;
 import com.feng.boot.admin.commons.enums.ResponseStatusEnum;
 import com.feng.boot.admin.commons.enums.SortTypeEnum;
-import com.feng.boot.admin.commons.utils.JsonUtils;
 import com.feng.boot.admin.domain.service.impl.SuperBaseServiceImpl;
 import com.feng.boot.admin.event.menu.MenuEvent;
-import com.feng.boot.admin.exceptions.LoginException;
 import com.feng.boot.admin.project.system.menu.mapper.IMenuMapper;
-import com.feng.boot.admin.project.system.menu.model.dto.MenuDTO;
-import com.feng.boot.admin.project.system.menu.model.dto.TreeMenuDTO;
-import com.feng.boot.admin.project.system.menu.model.entity.MenuEntity;
-import com.feng.boot.admin.project.system.menu.model.query.MenuParams;
-import com.feng.boot.admin.project.system.menu.model.vo.MenuMetaVO;
-import com.feng.boot.admin.project.system.menu.model.vo.MenuPermissionVO;
-import com.feng.boot.admin.project.system.menu.model.vo.VueMenuVO;
 import com.feng.boot.admin.project.system.menu.service.IMenuService;
-import com.hb0730.commons.cache.Cache;
-import com.hb0730.commons.lang.StringUtils;
-import com.hb0730.commons.lang.collection.CollectionUtils;
-import com.hb0730.commons.spring.BeanUtils;
+import com.feng.commons.cache.Cache;
+import com.feng.commons.json.utils.Jsons;
+import com.feng.commons.lang.StringUtils;
+import com.feng.commons.lang.collection.CollectionUtils;
+import com.feng.commons.spring.BeanUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.context.ApplicationEventPublisher;
@@ -43,7 +43,7 @@ import java.io.Serializable;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static com.hb0730.commons.lang.constants.PathConst.ROOT_PATH;
+import static com.feng.commons.lang.constants.PathConst.ROOT_PATH;
 
 /**
  * 菜单  服务实现类
@@ -128,7 +128,7 @@ public class MenuServiceImpl extends SuperBaseServiceImpl<Long, MenuParams, Menu
         if (!optional.isPresent()) {
             return Lists.newArrayList();
         }
-        return JsonUtils.getJson().jsonToList(JsonUtils.getJson().objectToJson(optional.get()), TreeMenuDTO.class);
+        return Jsons.JSONS.jsonToList(Jsons.JSONS.objectToJson(optional.get()), TreeMenuDTO.class);
     }
 
     @Override

@@ -2,11 +2,11 @@ package com.feng.boot.admin.project.system.user.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.feng.boot.admin.project.system.user.mapper.IUserPostMapper;
-import com.feng.boot.admin.project.system.user.service.IUserPostService;
 import com.google.common.collect.Sets;
 import com.feng.boot.admin.domain.service.impl.BaseServiceImpl;
+import com.feng.boot.admin.project.system.user.mapper.IUserPostMapper;
 import com.feng.boot.admin.project.system.user.model.entity.UserPostEntity;
+import com.feng.boot.admin.project.system.user.service.IUserPostService;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;

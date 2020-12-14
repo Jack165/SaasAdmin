@@ -1,11 +1,11 @@
 package com.feng.boot.admin.project.system.user.controller;
 
 
-import com.feng.boot.admin.project.system.user.service.IUserAccountService;
 import com.feng.boot.admin.domain.controller.SuperSimpleBaseController;
 import com.feng.boot.admin.project.system.user.model.entity.UserAccountEntity;
 import com.feng.boot.admin.project.system.user.model.query.UserAccountParams;
 import com.feng.boot.admin.project.system.user.model.dto.UserAccountDTO;
+import com.feng.boot.admin.project.system.user.service.IUserAccountService;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

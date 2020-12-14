@@ -45,7 +45,7 @@ public enum ResponseStatusEnum implements ValueEnum<String> {
     /**
      * 无权限使用 API
      */
-    NO_PERMISSION("A0312","无权限使用 API"),
+    NO_PERMISSION("A0312", "无权限使用 API"),
     /**
      * 系统错误
      */

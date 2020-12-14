@@ -32,8 +32,8 @@ public class PermissionGenerator {
         mpg.setDataSource(datasourceConfig);
         //数据库表配置
         StrategyConfig strategyConfig = new StrategyConfig();
-        strategyConfig.setTablePrefix("t_sys" );
-        strategyConfig.setInclude("t_sys_permission" );
+        strategyConfig.setTablePrefix("t_sys");
+        strategyConfig.setInclude("t_sys_permission");
         strategyConfig.setNaming(NamingStrategy.underline_to_camel);
         strategyConfig.setColumnNaming(NamingStrategy.underline_to_camel);
         strategyConfig.setSuperEntityClass(MysqlProperties.SUPER_ENTITY_CLASS);
@@ -52,28 +52,28 @@ public class PermissionGenerator {
         mpg.setStrategy(strategyConfig);
         //包名配置
         PackageConfig packageConfig = new PackageConfig();
-        packageConfig.setParent("com.hb0730.boot.admin.project.system" );
-        packageConfig.setModuleName("permission" );
-        packageConfig.setEntity("model.entity" );
-        packageConfig.setService("service" );
-        packageConfig.setServiceImpl("service.impl" );
-        packageConfig.setMapper("mapper" );
-        packageConfig.setXml("" );
-        packageConfig.setController("controller" );
+        packageConfig.setParent("com.feng.boot.admin.project.system");
+        packageConfig.setModuleName("permission");
+        packageConfig.setEntity("model.entity");
+        packageConfig.setService("service");
+        packageConfig.setServiceImpl("service.impl");
+        packageConfig.setMapper("mapper");
+        packageConfig.setXml("");
+        packageConfig.setController("controller");
         mpg.setPackageInfo(packageConfig);
 
         //全局配置
         GlobalConfig globalConfig = new GlobalConfig();
-        String projectPath = System.getProperty("user.dir" );
-        globalConfig.setOutputDir(projectPath + "/src/main/java" );
+        String projectPath = System.getProperty("user.dir");
+        globalConfig.setOutputDir(projectPath + "/src/main/java");
         globalConfig.setFileOverride(true);
         globalConfig.setOpen(false);
-        globalConfig.setAuthor("bing_huang" );
-        globalConfig.setEntityName("%sEntity" );
-        globalConfig.setMapperName("I%sMapper" );
-        globalConfig.setServiceName("I%sService" );
-        globalConfig.setServiceImplName("%sServiceImpl" );
-        globalConfig.setControllerName("%sController" );
+        globalConfig.setAuthor("bing_huang");
+        globalConfig.setEntityName("%sEntity");
+        globalConfig.setMapperName("I%sMapper");
+        globalConfig.setServiceName("I%sService");
+        globalConfig.setServiceImplName("%sServiceImpl");
+        globalConfig.setControllerName("%sController");
         mpg.setGlobalConfig(globalConfig);
 
         // 自定义配置
@@ -83,7 +83,7 @@ public class PermissionGenerator {
                 // to do nothing
             }
         };
-        String templatePath = "/templates/mapper.xml.vm" ;
+        String templatePath = "/templates/mapper.xml.vm";
         // 自定义输出配置
         List<FileOutConfig> focList = new ArrayList<>();
         // 自定义配置会被优先输出

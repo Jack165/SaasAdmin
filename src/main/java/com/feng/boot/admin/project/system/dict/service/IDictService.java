@@ -1,10 +1,10 @@
 package com.feng.boot.admin.project.system.dict.service;
 
+import com.feng.boot.admin.domain.service.ISuperBaseService;
 import com.feng.boot.admin.project.system.dict.model.dto.DictDTO;
 import com.feng.boot.admin.project.system.dict.model.entity.DictEntity;
 import com.feng.boot.admin.project.system.dict.model.query.DictParams;
 import com.feng.boot.admin.project.system.dict.model.vo.DictVO;
-import com.feng.boot.admin.domain.service.ISuperBaseService;
 
 import java.util.List;
 

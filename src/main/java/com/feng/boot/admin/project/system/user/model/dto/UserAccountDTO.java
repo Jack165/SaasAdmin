@@ -1,8 +1,8 @@
 package com.feng.boot.admin.project.system.user.model.dto;
 
+import com.feng.boot.admin.project.system.user.model.entity.UserAccountEntity;
 import com.feng.boot.admin.domain.model.InputConverter;
 import com.feng.boot.admin.domain.model.dto.BaseDTO;
-import com.feng.boot.admin.project.system.user.model.entity.UserAccountEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

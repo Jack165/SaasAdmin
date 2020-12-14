@@ -1,16 +1,16 @@
 package com.feng.boot.admin.project.system.dept.controller;
 
 
-import com.feng.boot.admin.project.system.dept.model.dto.DeptDTO;
-import com.feng.boot.admin.project.system.dept.model.dto.TreeDeptDTO;
-import com.feng.boot.admin.project.system.dept.model.entity.DeptEntity;
-import com.feng.boot.admin.project.system.dept.model.query.DeptParams;
-import com.feng.boot.admin.project.system.dept.service.IDeptService;
 import com.feng.boot.admin.annotation.ClassDescribe;
 import com.feng.boot.admin.annotation.PreAuth;
 import com.feng.boot.admin.domain.controller.SuperSimpleBaseController;
 import com.feng.boot.admin.domain.result.Result;
 import com.feng.boot.admin.domain.result.R;
+import com.feng.boot.admin.project.system.dept.model.dto.DeptDTO;
+import com.feng.boot.admin.project.system.dept.model.dto.TreeDeptDTO;
+import com.feng.boot.admin.project.system.dept.model.entity.DeptEntity;
+import com.feng.boot.admin.project.system.dept.model.query.DeptParams;
+import com.feng.boot.admin.project.system.dept.service.IDeptService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

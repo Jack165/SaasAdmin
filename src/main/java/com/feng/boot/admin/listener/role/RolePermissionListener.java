@@ -1,13 +1,13 @@
 package com.feng.boot.admin.listener.role;
 
-import com.feng.boot.admin.security.model.User;
 import com.feng.boot.admin.event.menu.MenuEvent;
 import com.feng.boot.admin.event.role.RolePermissionEvent;
 import com.feng.boot.admin.project.system.user.model.dto.UserDTO;
 import com.feng.boot.admin.project.system.user.service.IUserInfoService;
+import com.feng.boot.admin.security.model.User;
 import com.feng.boot.admin.token.ITokenService;
-import com.hb0730.commons.lang.collection.CollectionUtils;
-import com.hb0730.commons.spring.BeanUtils;
+import com.feng.commons.lang.collection.CollectionUtils;
+import com.feng.commons.spring.BeanUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationListener;

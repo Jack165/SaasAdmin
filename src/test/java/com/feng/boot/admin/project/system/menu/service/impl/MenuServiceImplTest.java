@@ -1,13 +1,13 @@
 package com.feng.boot.admin.project.system.menu.service.impl;
 
+import com.google.common.collect.Lists;
 import com.feng.boot.admin.project.system.menu.model.dto.MenuDTO;
 import com.feng.boot.admin.project.system.menu.model.dto.TreeMenuDTO;
 import com.feng.boot.admin.project.system.menu.model.entity.MenuEntity;
 import com.feng.boot.admin.project.system.menu.model.vo.MenuPermissionVO;
 import com.feng.boot.admin.project.system.menu.model.vo.VueMenuVO;
 import com.feng.boot.admin.project.system.menu.service.IMenuService;
-import com.google.common.collect.Lists;
-import com.hb0730.commons.spring.BeanUtils;
+import com.feng.commons.spring.BeanUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;

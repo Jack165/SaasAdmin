@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * 登录日志检索
@@ -21,6 +21,6 @@ public class LoginLogParams extends BaseParams {
     private String username;
     private String loginIp;
     private Integer status;
-    private LocalDateTime startTime;
-    private LocalDateTime endTime;
+    private Date startTime;
+    private Date endTime;
 }

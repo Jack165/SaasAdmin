@@ -1,7 +1,7 @@
 package com.feng.boot.admin.domain.controller.base;
 
-import com.feng.boot.admin.domain.model.entity.BaseDomain;
 import com.feng.boot.admin.domain.service.ISuperBaseService;
+import com.feng.boot.admin.domain.model.entity.BaseDomain;
 
 /**
  * 基础 controller<br>

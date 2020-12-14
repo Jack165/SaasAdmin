@@ -1,11 +1,11 @@
 package com.feng.boot.admin.token;
 
 import com.feng.boot.admin.security.model.User;
-import com.feng.boot.admin.token.configuration.TokenProperties;
 import com.google.common.collect.Maps;
-import com.hb0730.commons.lang.StringUtils;
-import com.hb0730.commons.spring.IpUtils;
-import com.hb0730.commons.spring.ServletUtils;
+import com.feng.boot.admin.token.configuration.TokenProperties;
+import com.feng.commons.lang.StringUtils;
+import com.feng.commons.spring.IpUtils;
+import com.feng.commons.spring.ServletUtils;
 import eu.bitwalker.useragentutils.UserAgent;
 import lombok.Getter;
 import lombok.Setter;

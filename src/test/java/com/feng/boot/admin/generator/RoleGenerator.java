@@ -17,7 +17,6 @@ import java.util.List;
  * 角色生成器
  *
  * @author bing_huang
- *
  */
 public class RoleGenerator {
     public static void main(String[] args) {
@@ -52,7 +51,7 @@ public class RoleGenerator {
         mpg.setStrategy(strategyConfig);
         //包名配置
         PackageConfig packageConfig = new PackageConfig();
-        packageConfig.setParent("com.hb0730.boot.admin.project.system");
+        packageConfig.setParent("com.feng.boot.admin.project.system");
         packageConfig.setModuleName("role");
         packageConfig.setEntity("model.entity");
         packageConfig.setService("service");

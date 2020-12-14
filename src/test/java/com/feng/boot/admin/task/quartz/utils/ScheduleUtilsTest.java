@@ -1,7 +1,7 @@
 package com.feng.boot.admin.task.quartz.utils;
 
 import com.feng.boot.admin.task.domain.JobInfo;
-import com.hb0730.commons.spring.SpringContextUtils;
+import com.feng.commons.spring.SpringContextUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,6 +1,6 @@
 package com.feng.boot.admin.configuration;
 
-import com.hb0730.commons.lang.thread.ThreadUtils;
+import com.feng.commons.lang.thread.ThreadUtils;
 import org.apache.commons.lang3.concurrent.BasicThreadFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

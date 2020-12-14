@@ -2,8 +2,9 @@ package com.feng.boot.admin.commons.utils;
 
 import com.feng.boot.admin.project.system.dict.model.vo.DictVO;
 import com.feng.boot.admin.project.system.dict.service.IDictService;
-import com.hb0730.commons.json.exceptions.JsonException;
-import com.hb0730.commons.spring.SpringContextUtils;
+import com.feng.commons.json.exceptions.JsonException;
+import com.feng.commons.json.utils.Jsons;
+import com.feng.commons.spring.SpringContextUtils;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 
@@ -37,7 +38,7 @@ public class DictUtils {
             return "";
         }
         try {
-            Optional<DictVO.DictEntryVO> entryValue = JsonUtils.getJson().jsonToList(JsonUtils.getJson().objectToJson(cache), DictVO.class)
+            Optional<DictVO.DictEntryVO> entryValue = Jsons.JSONS.jsonToList(Jsons.JSONS.objectToJson(cache), DictVO.class)
                     .stream()
                     .filter(dictType -> dictType.getType().equals(type))
                     .map(DictVO::getEntry)

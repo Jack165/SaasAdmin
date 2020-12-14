@@ -1,9 +1,9 @@
 package com.feng.boot.admin.project.system.user.service;
 
-import com.feng.boot.admin.domain.service.ISuperBaseService;
 import com.feng.boot.admin.project.system.user.model.dto.UserAccountDTO;
 import com.feng.boot.admin.project.system.user.model.entity.UserAccountEntity;
 import com.feng.boot.admin.project.system.user.model.query.UserAccountParams;
+import com.feng.boot.admin.domain.service.ISuperBaseService;
 import org.springframework.lang.NonNull;
 
 import javax.annotation.Nonnull;

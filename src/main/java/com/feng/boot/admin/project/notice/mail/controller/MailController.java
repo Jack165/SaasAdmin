@@ -1,15 +1,15 @@
 package com.feng.boot.admin.project.notice.mail.controller;
 
-import com.feng.boot.admin.listener.option.OptionListener;
-import com.feng.boot.admin.project.notice.mail.model.dto.MailDTO;
-import com.feng.boot.admin.project.notice.mail.model.dto.MailTestDTO;
 import com.feng.boot.admin.annotation.ClassDescribe;
 import com.feng.boot.admin.annotation.Log;
+import com.feng.boot.admin.listener.option.OptionListener;
 import com.feng.boot.admin.commons.enums.BusinessTypeEnum;
 import com.feng.boot.admin.domain.result.R;
 import com.feng.boot.admin.domain.result.Result;
+import com.feng.boot.admin.project.notice.mail.model.dto.MailDTO;
+import com.feng.boot.admin.project.notice.mail.model.dto.MailTestDTO;
 import com.feng.boot.admin.project.notice.mail.service.IMailService;
-import com.hb0730.commons.mail.spring.service.MailService;
+import com.feng.commons.mail.spring.service.MailService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;

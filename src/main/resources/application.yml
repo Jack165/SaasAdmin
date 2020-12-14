@@ -6,7 +6,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://feng-mydb.mysql.rds.aliyuncs.com:3306/boot-admin?characterEncoding=UTF-8&useSSL=false&useUnicode=true&serverTimezone=GMT%2b8
+    url: jdbc:mysql://feng-mydb.mysql.rds.aliyuncs.com:3306/boot-admin?characterEncoding=UTF-8&useSSL=false&useUnicode=true&serverTimezone=UTC
     username: oim
     password: oim@feng
     platform: mysql
@@ -21,7 +21,7 @@ spring:
       connection-test-query: SELECT 1
   redis:
     host: 139.196.38.232
-    password: admin@feng.
+    password: adminfeng@.
     port: 6379
     lettuce:
       pool:

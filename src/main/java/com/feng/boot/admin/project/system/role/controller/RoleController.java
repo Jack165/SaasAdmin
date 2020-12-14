@@ -1,8 +1,6 @@
 package com.feng.boot.admin.project.system.role.controller;
 
 
-import com.feng.boot.admin.project.system.role.model.entity.RoleEntity;
-import com.feng.boot.admin.project.system.role.service.IRoleService;
 import com.feng.boot.admin.annotation.ClassDescribe;
 import com.feng.boot.admin.annotation.Log;
 import com.feng.boot.admin.annotation.PreAuth;
@@ -11,7 +9,9 @@ import com.feng.boot.admin.domain.controller.SuperSimpleBaseController;
 import com.feng.boot.admin.domain.result.Result;
 import com.feng.boot.admin.domain.result.R;
 import com.feng.boot.admin.project.system.role.model.dto.RoleExtDTO;
+import com.feng.boot.admin.project.system.role.model.entity.RoleEntity;
 import com.feng.boot.admin.project.system.role.model.query.RoleParams;
+import com.feng.boot.admin.project.system.role.service.IRoleService;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 

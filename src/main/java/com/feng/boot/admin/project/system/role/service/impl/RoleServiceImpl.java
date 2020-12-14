@@ -4,23 +4,23 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.feng.boot.admin.project.system.role.mapper.IRoleMapper;
-import com.feng.boot.admin.project.system.role.model.entity.RoleEntity;
-import com.feng.boot.admin.project.system.role.model.entity.RolePermissionEntity;
-import com.feng.boot.admin.project.system.role.service.IRolePermissionService;
-import com.feng.boot.admin.project.system.role.service.IRoleService;
 import com.google.common.collect.Sets;
 import com.feng.boot.admin.commons.utils.QueryWrapperUtils;
 import com.feng.boot.admin.domain.service.impl.SuperBaseServiceImpl;
 import com.feng.boot.admin.event.role.RolePermissionEvent;
+import com.feng.boot.admin.project.system.role.mapper.IRoleMapper;
 import com.feng.boot.admin.project.system.role.model.dto.RoleDTO;
 import com.feng.boot.admin.project.system.role.model.dto.RoleExtDTO;
 import com.feng.boot.admin.project.system.role.model.entity.RoleDeptEntity;
+import com.feng.boot.admin.project.system.role.model.entity.RoleEntity;
+import com.feng.boot.admin.project.system.role.model.entity.RolePermissionEntity;
 import com.feng.boot.admin.project.system.role.model.query.RoleParams;
 import com.feng.boot.admin.project.system.role.service.IRoleDeptService;
-import com.hb0730.commons.lang.StringUtils;
-import com.hb0730.commons.lang.collection.CollectionUtils;
-import com.hb0730.commons.spring.BeanUtils;
+import com.feng.boot.admin.project.system.role.service.IRolePermissionService;
+import com.feng.boot.admin.project.system.role.service.IRoleService;
+import com.feng.commons.lang.StringUtils;
+import com.feng.commons.lang.collection.CollectionUtils;
+import com.feng.commons.spring.BeanUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
@@ -211,7 +211,7 @@ public class RoleServiceImpl extends SuperBaseServiceImpl<Long, RoleParams, Role
         if (!CollectionUtils.isEmpty(newPermissionIds)) {
             rolePermissionService.savePermissionIdByRoleId(id, newPermissionIds);
         }
-        eventPublisher.publishEvent(new RolePermissionEvent(this,id));
+        eventPublisher.publishEvent(new RolePermissionEvent(this, id));
         return true;
     }
 

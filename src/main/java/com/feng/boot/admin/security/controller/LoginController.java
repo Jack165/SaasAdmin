@@ -1,9 +1,9 @@
 package com.feng.boot.admin.security.controller;
 
-import com.feng.boot.admin.security.model.LoginBody;
-import com.feng.boot.admin.security.model.LoginUser;
 import com.feng.boot.admin.domain.result.Result;
 import com.feng.boot.admin.domain.result.R;
+import com.feng.boot.admin.security.model.LoginBody;
+import com.feng.boot.admin.security.model.LoginUser;
 import com.feng.boot.admin.security.service.LoginServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;

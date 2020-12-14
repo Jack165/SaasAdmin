@@ -1,21 +1,20 @@
 package com.feng.boot.admin.aspectj;
 
-import com.feng.boot.admin.commons.enums.StatusEnum;
-import com.feng.boot.admin.commons.utils.JsonUtils;
+import com.feng.boot.admin.annotation.ClassDescribe;
+import com.feng.boot.admin.annotation.Log;
+import com.feng.boot.admin.configuration.properties.BootAdminProperties;
+import com.feng.boot.admin.exceptions.BusinessException;
 import com.feng.boot.admin.manager.AsyncManager;
 import com.feng.boot.admin.manager.factory.AsyncFactory;
 import com.feng.boot.admin.project.monitor.operation.model.entity.OperLogEntity;
 import com.feng.boot.admin.security.model.User;
 import com.feng.boot.admin.security.utils.SecurityUtils;
 import com.google.common.collect.Lists;
-import com.feng.boot.admin.annotation.ClassDescribe;
-import com.feng.boot.admin.annotation.Log;
-import com.feng.boot.admin.configuration.properties.BootAdminProperties;
-import com.feng.boot.admin.exceptions.BusinessException;
-import com.hb0730.commons.lang.ExceptionUtils;
-import com.hb0730.commons.lang.date.LocalDateTimeUtils;
-import com.hb0730.commons.spring.IpUtils;
-import com.hb0730.commons.spring.ServletUtils;
+import com.feng.boot.admin.commons.enums.StatusEnum;
+import com.feng.commons.json.utils.Jsons;
+import com.feng.commons.lang.ExceptionUtils;
+import com.feng.commons.spring.IpUtils;
+import com.feng.commons.spring.ServletUtils;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.JoinPoint;
@@ -32,6 +31,7 @@ import org.springframework.web.servlet.HandlerMapping;
 import javax.annotation.Nullable;
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -106,7 +106,7 @@ public class LogAspectj {
             if (null != currentUser) {
                 entity.setUsername(currentUser.getUsername());
                 entity.setCreateUserId(currentUser.getId());
-                entity.setCreateTime(LocalDateTimeUtils.now());
+                entity.setCreateTime(new Date());
             }
             //请求ip
             String ip = IpUtils.getIp(ServletUtils.getRequest());
@@ -143,12 +143,12 @@ public class LogAspectj {
             }
             //返回参数
             if (log.response()) {
-                String result = JsonUtils.getJson().objectToJson(null == jsonResult ? "" : jsonResult);
+                String result = Jsons.JSONS.objectToJson(null == jsonResult ? "" : jsonResult);
                 entity.setRequestResult(result);
             }
             if (null != e) {
                 if (log.requestByError()) {
-                    String result = JsonUtils.getJson().objectToJson(null == jsonResult ? "" : jsonResult);
+                    String result = Jsons.JSONS.objectToJson(null == jsonResult ? "" : jsonResult);
                     entity.setRequestResult(result);
                     String message = ExceptionUtils.getExceptionMessage(e);
                     entity.setErrorMessage(StringUtils.substring(message, 0, 2000));
@@ -279,7 +279,7 @@ public class LogAspectj {
                         }
                     }
                 }
-                params = JsonUtils.getJson().objectToJson(paramsObj);
+                params = Jsons.JSONS.objectToJson(paramsObj);
             }
         } catch (Exception e) {
             LOGGER.error("参数拼接异常");

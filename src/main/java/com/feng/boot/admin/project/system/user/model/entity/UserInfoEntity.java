@@ -89,8 +89,8 @@ public class UserInfoEntity extends BaseDomain {
 
     public static final String EMAIL = "email";
 
-    public static final String IS_ADMIN="is_admin";
+    public static final String IS_ADMIN = "is_admin";
 
-    public static final String DEPT_ID="dept_id";
+    public static final String DEPT_ID = "dept_id";
 
 }

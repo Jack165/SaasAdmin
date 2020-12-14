@@ -1,15 +1,14 @@
 package com.feng.boot.admin.commons.utils;
 
-import com.hb0730.commons.cache.Cache;
-import com.hb0730.commons.cache.impl.remote.RedisSpringDataCache;
-import com.hb0730.commons.spring.SpringContextUtils;
+import com.feng.boot.admin.commons.constant.RedisConstant;
+import com.feng.commons.cache.Cache;
+import com.feng.commons.cache.impl.remote.RedisSpringDataCache;
+import com.feng.commons.spring.SpringContextUtils;
 import org.springframework.lang.NonNull;
 import org.springframework.util.Assert;
 
 import java.util.Map;
 import java.util.Optional;
-
-import static com.feng.boot.admin.commons.constant.RedisConstant.OPTIONS_KEY_PREFIX;
 
 /**
  * option cache
@@ -29,7 +28,7 @@ public class OptionCacheUtils {
         @SuppressWarnings("unchecked")
         Cache<String, Map<String, Object>> cache = SpringContextUtils.getBean(RedisSpringDataCache.class);
         try {
-            return cache.get(OPTIONS_KEY_PREFIX + key);
+            return cache.get(RedisConstant.OPTIONS_KEY_PREFIX + key);
         } catch (Exception e) {
             return Optional.empty();
         }
@@ -44,7 +43,7 @@ public class OptionCacheUtils {
         Assert.hasText(key, "key can not be blank");
         @SuppressWarnings("unchecked")
         Cache<String, Map<String, Object>> cache = SpringContextUtils.getBean(RedisSpringDataCache.class);
-        cache.delete(OPTIONS_KEY_PREFIX + key);
+        cache.delete(RedisConstant.OPTIONS_KEY_PREFIX + key);
     }
 
     /**
@@ -57,6 +56,6 @@ public class OptionCacheUtils {
         Assert.hasText(key, "key can not be blank");
         @SuppressWarnings("unchecked")
         Cache<String, Map<String, Object>> cache = SpringContextUtils.getBean(RedisSpringDataCache.class);
-        cache.put(OPTIONS_KEY_PREFIX + key, values);
+        cache.put(RedisConstant.OPTIONS_KEY_PREFIX + key, values);
     }
 }

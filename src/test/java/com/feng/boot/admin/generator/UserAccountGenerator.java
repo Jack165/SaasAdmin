@@ -52,7 +52,7 @@ public class UserAccountGenerator {
         mpg.setStrategy(strategyConfig);
         //包名配置
         PackageConfig packageConfig = new PackageConfig();
-        packageConfig.setParent("com.hb0730.boot.admin.project.sys.user");
+        packageConfig.setParent("com.feng.boot.admin.project.sys.user");
         packageConfig.setModuleName("account");
         packageConfig.setEntity("model.entity");
         packageConfig.setService("service");

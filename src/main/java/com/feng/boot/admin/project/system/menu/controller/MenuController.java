@@ -1,18 +1,18 @@
 package com.feng.boot.admin.project.system.menu.controller;
 
 
-import com.feng.boot.admin.project.system.menu.service.IMenuService;
 import com.feng.boot.admin.annotation.ClassDescribe;
 import com.feng.boot.admin.annotation.PreAuth;
-import com.feng.boot.admin.domain.controller.SuperSimpleBaseController;
-import com.feng.boot.admin.domain.result.R;
-import com.feng.boot.admin.domain.result.Result;
 import com.feng.boot.admin.project.system.menu.model.dto.MenuDTO;
 import com.feng.boot.admin.project.system.menu.model.dto.TreeMenuDTO;
 import com.feng.boot.admin.project.system.menu.model.entity.MenuEntity;
 import com.feng.boot.admin.project.system.menu.model.query.MenuParams;
 import com.feng.boot.admin.project.system.menu.model.vo.MenuPermissionVO;
 import com.feng.boot.admin.project.system.menu.model.vo.VueMenuVO;
+import com.feng.boot.admin.domain.controller.SuperSimpleBaseController;
+import com.feng.boot.admin.domain.result.R;
+import com.feng.boot.admin.domain.result.Result;
+import com.feng.boot.admin.project.system.menu.service.IMenuService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

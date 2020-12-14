@@ -1,7 +1,7 @@
 package com.feng.boot.admin.project.system.role.model.dto;
 
-import com.feng.boot.admin.project.system.role.model.entity.RoleEntity;
 import com.feng.boot.admin.domain.model.InputConverter;
+import com.feng.boot.admin.project.system.role.model.entity.RoleEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;

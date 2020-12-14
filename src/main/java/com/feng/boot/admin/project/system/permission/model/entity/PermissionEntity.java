@@ -17,7 +17,7 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-@TableName("t_sys_permission" )
+@TableName("t_sys_permission")
 public class PermissionEntity extends BaseDomain {
 
     private static final long serialVersionUID = 1L;
@@ -25,50 +25,50 @@ public class PermissionEntity extends BaseDomain {
     /**
      * 备注
      */
-    @TableField("description" )
+    @TableField("description")
     private String description;
 
     /**
      * id
      */
-    @TableId("id" )
+    @TableId("id")
     private Long id;
 
     /**
      * 名称
      */
-    @TableField("name" )
+    @TableField("name")
     private String name;
 
     /**
      * 标识符
      */
-    @TableField("permission" )
+    @TableField("permission")
     private String permission;
 
     /**
      * 菜单id
      */
-    @TableField("menu_id" )
+    @TableField("menu_id")
     private Long menuId;
 
     /**
      * 排序
      */
-    @TableField("sort" )
+    @TableField("sort")
     private Integer sort;
 
 
-    public static final String DESCRIPTION = "description" ;
+    public static final String DESCRIPTION = "description";
 
-    public static final String ID = "id" ;
+    public static final String ID = "id";
 
-    public static final String NAME = "name" ;
+    public static final String NAME = "name";
 
-    public static final String PERMISSION = "permission" ;
+    public static final String PERMISSION = "permission";
 
-    public static final String MENU_ID = "menu_id" ;
+    public static final String MENU_ID = "menu_id";
 
-    public static final String SORT = "sort" ;
+    public static final String SORT = "sort";
 
 }

@@ -1,10 +1,10 @@
 package com.feng.boot.admin.project.system.dept.service;
 
+import com.feng.boot.admin.domain.service.ISuperBaseService;
 import com.feng.boot.admin.project.system.dept.model.dto.DeptDTO;
 import com.feng.boot.admin.project.system.dept.model.dto.TreeDeptDTO;
 import com.feng.boot.admin.project.system.dept.model.entity.DeptEntity;
 import com.feng.boot.admin.project.system.dept.model.query.DeptParams;
-import com.feng.boot.admin.domain.service.ISuperBaseService;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

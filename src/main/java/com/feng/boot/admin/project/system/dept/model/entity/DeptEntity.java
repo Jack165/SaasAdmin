@@ -17,7 +17,7 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-@TableName("t_sys_dept" )
+@TableName("t_sys_dept")
 public class DeptEntity extends BaseDomain {
 
     private static final long serialVersionUID = 1L;
@@ -25,74 +25,74 @@ public class DeptEntity extends BaseDomain {
     /**
      * 备注
      */
-    @TableField("description" )
+    @TableField("description")
     private String description;
 
     /**
      * id
      */
-    @TableId("id" )
+    @TableId("id")
     private Long id;
 
     /**
      * 名称
      */
-    @TableField("name" )
+    @TableField("name")
     private String name;
 
     /**
      * 负责人
      */
-    @TableField("leader" )
+    @TableField("leader")
     private String leader;
 
     /**
      * 电话
      */
-    @TableField("phone" )
+    @TableField("phone")
     private String phone;
 
     /**
      * 邮箱
      */
-    @TableField("email" )
+    @TableField("email")
     private String email;
 
     /**
      * 父级
      */
-    @TableField("parent_id" )
+    @TableField("parent_id")
     private Long parentId;
 
     /**
      * 排序
      */
-    @TableField("sort" )
+    @TableField("sort")
     private Integer sort;
 
     /**
      * 祖级关系
      */
-    @TableField("ancestors" )
+    @TableField("ancestors")
     private String ancestors;
 
 
-    public static final String DESCRIPTION = "description" ;
+    public static final String DESCRIPTION = "description";
 
-    public static final String ID = "id" ;
+    public static final String ID = "id";
 
-    public static final String NAME = "name" ;
+    public static final String NAME = "name";
 
-    public static final String LEADER = "leader" ;
+    public static final String LEADER = "leader";
 
-    public static final String PHONE = "phone" ;
+    public static final String PHONE = "phone";
 
-    public static final String EMAIL = "email" ;
+    public static final String EMAIL = "email";
 
-    public static final String PARENT_ID = "parent_id" ;
+    public static final String PARENT_ID = "parent_id";
 
-    public static final String SORT = "sort" ;
+    public static final String SORT = "sort";
 
-    public static final String ANCESTORS = "ancestors" ;
+    public static final String ANCESTORS = "ancestors";
 
 }

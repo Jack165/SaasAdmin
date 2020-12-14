@@ -10,7 +10,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 操作日志 
+ * 操作日志
  * </p>
  *
  * @author bing_huang

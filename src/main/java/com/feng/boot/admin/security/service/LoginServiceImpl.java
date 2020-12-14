@@ -1,15 +1,15 @@
 package com.feng.boot.admin.security.service;
 
 import com.feng.boot.admin.exceptions.UsernameNotFoundException;
-import com.feng.boot.admin.security.model.LoginUser;
-import com.feng.boot.admin.security.model.User;
 import com.feng.boot.admin.commons.enums.ResponseStatusEnum;
 import com.feng.boot.admin.commons.enums.StatusEnum;
 import com.feng.boot.admin.exceptions.LoginException;
 import com.feng.boot.admin.manager.AsyncManager;
 import com.feng.boot.admin.manager.factory.AsyncFactory;
+import com.feng.boot.admin.security.model.LoginUser;
+import com.feng.boot.admin.security.model.User;
 import com.feng.boot.admin.token.ITokenService;
-import com.hb0730.commons.spring.BeanUtils;
+import com.feng.commons.spring.BeanUtils;
 import lombok.AllArgsConstructor;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
@@ -35,7 +35,7 @@ public class LoginServiceImpl {
     public LoginUser login(@NonNull String username, @NonNull String password) {
         Authentication authenticate = null;
         try {
-            // see com.hb0730.boot.admin.security.service.UserDetailsServiceImpl#loadUserByUsername
+            // see com.feng.boot.admin.security.service.UserDetailsServiceImpl#loadUserByUsername
             authenticate = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
         } catch (Exception e) {
             if (e.getCause() instanceof UsernameNotFoundException) {

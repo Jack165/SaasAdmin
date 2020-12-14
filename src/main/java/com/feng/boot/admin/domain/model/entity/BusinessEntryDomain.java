@@ -27,7 +27,7 @@ public class BusinessEntryDomain extends BaseDomain {
     @TableField(value = "parent_id")
     private Long parentId;
 
-    public static  final String ID="ID";
+    public static final String ID = "ID";
 
-    public static final String PARENT_ID="parent_id";
+    public static final String PARENT_ID = "parent_id";
 }

@@ -1,12 +1,12 @@
 package com.feng.boot.admin.project.system.menu.service;
 
-import com.feng.boot.admin.domain.service.ISuperBaseService;
 import com.feng.boot.admin.project.system.menu.model.dto.MenuDTO;
 import com.feng.boot.admin.project.system.menu.model.dto.TreeMenuDTO;
 import com.feng.boot.admin.project.system.menu.model.entity.MenuEntity;
 import com.feng.boot.admin.project.system.menu.model.query.MenuParams;
 import com.feng.boot.admin.project.system.menu.model.vo.MenuPermissionVO;
 import com.feng.boot.admin.project.system.menu.model.vo.VueMenuVO;
+import com.feng.boot.admin.domain.service.ISuperBaseService;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

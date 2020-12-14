@@ -51,7 +51,7 @@ public class UserInfoGenerator {
         mpg.setStrategy(strategyConfig);
         //包名配置
         PackageConfig packageConfig = new PackageConfig();
-        packageConfig.setParent("com.hb0730.boot.admin.project.system.user");
+        packageConfig.setParent("com.feng.boot.admin.project.system.user");
         packageConfig.setModuleName("info");
         packageConfig.setEntity("model.entity");
         packageConfig.setService("service");

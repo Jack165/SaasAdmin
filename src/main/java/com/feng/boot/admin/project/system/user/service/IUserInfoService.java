@@ -1,10 +1,10 @@
 package com.feng.boot.admin.project.system.user.service;
 
+import com.feng.boot.admin.project.system.user.model.entity.UserInfoEntity;
+import com.feng.boot.admin.project.system.user.model.query.UserInfoParams;
 import com.feng.boot.admin.domain.service.ISuperBaseService;
 import com.feng.boot.admin.project.system.user.model.dto.UserDTO;
 import com.feng.boot.admin.project.system.user.model.dto.UserInfoDTO;
-import com.feng.boot.admin.project.system.user.model.entity.UserInfoEntity;
-import com.feng.boot.admin.project.system.user.model.query.UserInfoParams;
 
 /**
  * 用户信息  服务类

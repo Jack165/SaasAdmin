@@ -34,25 +34,25 @@ public class PermissionDTO extends BaseDTO {
     /**
      * 名称
      */
-    @NotBlank(message = "权限名称不为空" )
+    @NotBlank(message = "权限名称不为空")
     private String name;
 
     /**
      * 标识符
      */
-    @NotBlank(message = "权限标识符不为空" )
+    @NotBlank(message = "权限标识符不为空")
     private String permission;
 
     /**
      * 菜单id
      */
-    @NotNull(message = "所属菜单不为空" )
+    @NotNull(message = "所属菜单不为空")
     private Long menuId;
 
     /**
      * 排序
      */
-    @Max(value = 999, message = "排序值最大为999" )
-    @Min(value = 0, message = "排序值最小为0" )
+    @Max(value = 999, message = "排序值最大为999")
+    @Min(value = 0, message = "排序值最小为0")
     private Integer sort;
 }

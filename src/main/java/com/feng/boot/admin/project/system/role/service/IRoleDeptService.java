@@ -33,6 +33,7 @@ public interface IRoleDeptService extends IService<RoleDeptEntity> {
      * @return 部门id
      */
     List<Long> findDeptIdByRoleId(@Nonnull Long roleId);
+
     /**
      * 根据角色id查询部门id
      *

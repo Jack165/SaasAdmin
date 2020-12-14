@@ -1,9 +1,9 @@
 package com.feng.boot.admin.security.handler;
 
 import com.feng.boot.admin.commons.enums.ResponseStatusEnum;
-import com.feng.boot.admin.commons.utils.JsonUtils;
 import com.feng.boot.admin.domain.result.R;
 import com.feng.boot.admin.domain.result.Result;
+import com.feng.commons.json.utils.Jsons;
 import lombok.SneakyThrows;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;
@@ -29,6 +29,6 @@ public class AccessDeniedHandlerImpl implements AccessDeniedHandler {
         response.setStatus(200);
         response.setContentType("application/json");
         response.setCharacterEncoding("utf-8");
-        response.getWriter().print(JsonUtils.getJson().objectToJson(result));
+        response.getWriter().print(Jsons.JSONS.objectToJson(result));
     }
 }

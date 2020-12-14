@@ -1,6 +1,5 @@
 package com.feng.boot.admin.cache;
 
-import com.feng.boot.admin.token.ITokenService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,6 +12,8 @@ import javax.annotation.Resource;
 
 import java.util.Objects;
 import java.util.Set;
+
+import static com.feng.boot.admin.token.ITokenService.LOGIN_TOKEN_KEY_PREFIX;
 
 /**
  * redis 测试
@@ -27,14 +28,14 @@ public class RedisTest {
     private RedisTemplate<String, Object> redisTemplate;
 
     @Test
-    public void listTest(){
-        Set<String> keys = redisTemplate.keys(ITokenService.LOGIN_TOKEN_KEY_PREFIX + "*");
+    public void listTest() {
+        Set<String> keys = redisTemplate.keys(LOGIN_TOKEN_KEY_PREFIX + "*");
         Assert.assertNotNull(keys);
     }
 
     @Test
-    public void getValueByListTest(){
-        Set<String> keys = redisTemplate.keys(ITokenService.LOGIN_TOKEN_KEY_PREFIX + "*");
+    public void getValueByListTest() {
+        Set<String> keys = redisTemplate.keys(LOGIN_TOKEN_KEY_PREFIX + "*");
         for (String key : Objects.requireNonNull(keys)) {
             Object o = redisTemplate.opsForValue().get(key);
             Assert.assertNotNull(o);

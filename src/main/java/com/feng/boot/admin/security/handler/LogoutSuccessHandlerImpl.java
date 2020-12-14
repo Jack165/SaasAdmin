@@ -1,13 +1,13 @@
 package com.feng.boot.admin.security.handler;
 
-import com.feng.boot.admin.security.model.User;
 import com.feng.boot.admin.commons.enums.StatusEnum;
-import com.feng.boot.admin.commons.utils.JsonUtils;
-import com.feng.boot.admin.domain.result.R;
 import com.feng.boot.admin.domain.result.Result;
+import com.feng.boot.admin.domain.result.R;
 import com.feng.boot.admin.manager.AsyncManager;
 import com.feng.boot.admin.manager.factory.AsyncFactory;
+import com.feng.boot.admin.security.model.User;
 import com.feng.boot.admin.token.ITokenService;
+import com.feng.commons.json.utils.Jsons;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.slf4j.Logger;
@@ -44,6 +44,6 @@ public class LogoutSuccessHandlerImpl implements LogoutSuccessHandler {
         response.setStatus(200);
         response.setContentType("application/json");
         response.setCharacterEncoding("utf-8");
-        response.getWriter().print(JsonUtils.getJson().objectToJson(result));
+        response.getWriter().print(Jsons.JSONS.objectToJson(result));
     }
 }

@@ -2,7 +2,7 @@ package com.feng.boot.admin.security.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.feng.boot.admin.project.system.user.model.dto.UserDTO;
-import com.hb0730.commons.lang.collection.CollectionUtils;
+import com.feng.commons.lang.collection.CollectionUtils;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.lang3.StringUtils;

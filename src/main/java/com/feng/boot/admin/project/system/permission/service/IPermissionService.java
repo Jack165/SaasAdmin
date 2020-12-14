@@ -1,9 +1,9 @@
 package com.feng.boot.admin.project.system.permission.service;
 
-import com.feng.boot.admin.domain.service.ISuperBaseService;
 import com.feng.boot.admin.project.system.permission.model.dto.PermissionDTO;
 import com.feng.boot.admin.project.system.permission.model.entity.PermissionEntity;
 import com.feng.boot.admin.project.system.permission.model.query.PermissionParams;
+import com.feng.boot.admin.domain.service.ISuperBaseService;
 
 import javax.annotation.Nonnull;
 import java.util.Collection;

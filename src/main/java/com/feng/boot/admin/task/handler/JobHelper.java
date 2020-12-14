@@ -1,8 +1,8 @@
 package com.feng.boot.admin.task.handler;
 
-import com.feng.boot.admin.task.quartz.utils.ScheduleUtils;
 import com.feng.boot.admin.task.domain.JobInfo;
 import com.feng.boot.admin.task.quartz.constant.ScheduleConstants;
+import com.feng.boot.admin.task.quartz.utils.ScheduleUtils;
 import lombok.RequiredArgsConstructor;
 import org.quartz.JobDataMap;
 import org.quartz.Scheduler;
@@ -23,7 +23,6 @@ import javax.annotation.Nonnull;
 @RequiredArgsConstructor
 public class JobHelper {
     private final SchedulerFactoryBean factoryBean;
-
 
 
     /**

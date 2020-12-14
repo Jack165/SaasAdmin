@@ -1,13 +1,13 @@
 package com.feng.boot.admin.domain.controller;
 
-import com.feng.boot.admin.domain.controller.base.IBaseSaveController;
-import com.feng.boot.admin.domain.controller.base.IBaseUpdateController;
 import com.feng.boot.admin.domain.controller.base.IBaseDeleteController;
 import com.feng.boot.admin.domain.controller.base.IBaseQueryController;
+import com.feng.boot.admin.domain.controller.base.IBaseSaveController;
+import com.feng.boot.admin.domain.controller.base.IBaseUpdateController;
+import com.feng.boot.admin.domain.service.ISuperBaseService;
 import com.feng.boot.admin.domain.model.dto.BaseDTO;
 import com.feng.boot.admin.domain.model.entity.BaseDomain;
 import com.feng.boot.admin.domain.model.query.BaseParams;
-import com.feng.boot.admin.domain.service.ISuperBaseService;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;

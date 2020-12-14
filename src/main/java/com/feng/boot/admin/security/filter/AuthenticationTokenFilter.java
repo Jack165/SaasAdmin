@@ -1,7 +1,7 @@
 package com.feng.boot.admin.security.filter;
 
-import com.feng.boot.admin.security.model.User;
 import com.feng.boot.admin.security.utils.SecurityUtils;
+import com.feng.boot.admin.security.model.User;
 import com.feng.boot.admin.token.ITokenService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;

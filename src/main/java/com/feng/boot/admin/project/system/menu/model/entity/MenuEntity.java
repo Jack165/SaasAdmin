@@ -82,7 +82,7 @@ public class MenuEntity extends BaseDomain {
 
     public static final String NAME = "title";
 
-    public static final String ENNAME="enname";
+    public static final String ENNAME = "enname";
 
     public static final String PARENT_ID = "parent_id";
 

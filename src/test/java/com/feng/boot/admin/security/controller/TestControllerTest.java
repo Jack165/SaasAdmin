@@ -2,7 +2,7 @@ package com.feng.boot.admin.security.controller;
 
 import com.feng.boot.admin.domain.result.Result;
 import com.feng.boot.admin.security.model.LoginUser;
-import com.hb0730.commons.json.gson.GsonUtils;
+import com.feng.commons.json.gson.GsonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
@@ -52,7 +52,7 @@ public class TestControllerTest {
 
         result = mvc.perform(
                 MockMvcRequestBuilders.get("/auth/test/ada")
-                        .header("Authorization","Bearer "+accessToken)
+                        .header("Authorization", "Bearer " + accessToken)
                         .accept(MediaType.APPLICATION_JSON_UTF8)
                         .contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(MockMvcResultMatchers.status().isOk())

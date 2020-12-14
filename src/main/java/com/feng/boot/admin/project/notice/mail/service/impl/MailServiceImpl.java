@@ -1,9 +1,9 @@
 package com.feng.boot.admin.project.notice.mail.service.impl;
 
-import com.feng.boot.admin.project.notice.mail.model.dto.MailDTO;
-import com.feng.boot.admin.project.notice.mail.model.dto.MailTestDTO;
 import com.feng.boot.admin.project.system.option.service.IOptionService;
 import com.feng.boot.admin.commons.enums.EmailPropertiesEnum;
+import com.feng.boot.admin.project.notice.mail.model.dto.MailDTO;
+import com.feng.boot.admin.project.notice.mail.model.dto.MailTestDTO;
 import com.feng.boot.admin.project.notice.mail.service.IMailService;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;

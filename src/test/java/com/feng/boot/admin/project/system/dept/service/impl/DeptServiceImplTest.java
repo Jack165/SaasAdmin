@@ -21,7 +21,7 @@ import java.util.Set;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-@ActiveProfiles("dev" )
+@ActiveProfiles("dev")
 @Slf4j
 public class DeptServiceImplTest {
     @Autowired

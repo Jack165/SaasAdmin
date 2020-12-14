@@ -1,7 +1,7 @@
 package com.feng.boot.admin.manager;
 
-import com.hb0730.commons.lang.thread.ThreadUtils;
-import com.hb0730.commons.spring.SpringContextUtils;
+import com.feng.commons.lang.thread.ThreadUtils;
+import com.feng.commons.spring.SpringContextUtils;
 
 import java.util.TimerTask;
 import java.util.concurrent.ScheduledExecutorService;

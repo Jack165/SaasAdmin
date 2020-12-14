@@ -1,8 +1,8 @@
 package com.feng.boot.admin.project.system.quartz.model.dto;
 
+import com.feng.boot.admin.project.system.quartz.model.entity.JobEntity;
 import com.feng.boot.admin.domain.model.InputConverter;
 import com.feng.boot.admin.domain.model.dto.BaseDTO;
-import com.feng.boot.admin.project.system.quartz.model.entity.JobEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

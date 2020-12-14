@@ -1,9 +1,9 @@
 package com.feng.boot.admin.project.system.role.service;
 
-import com.feng.boot.admin.project.system.role.model.entity.RoleEntity;
-import com.feng.boot.admin.domain.service.ISuperBaseService;
 import com.feng.boot.admin.project.system.role.model.dto.RoleExtDTO;
 import com.feng.boot.admin.project.system.role.model.query.RoleParams;
+import com.feng.boot.admin.domain.service.ISuperBaseService;
+import com.feng.boot.admin.project.system.role.model.entity.RoleEntity;
 
 import javax.annotation.Nonnull;
 import java.util.Collection;

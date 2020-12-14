@@ -2,15 +2,15 @@ package com.feng.boot.admin.project.system.permission.controller;
 
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.feng.boot.admin.project.system.permission.service.IPermissionService;
 import com.feng.boot.admin.annotation.ClassDescribe;
 import com.feng.boot.admin.annotation.PreAuth;
-import com.feng.boot.admin.domain.controller.SuperSimpleBaseController;
-import com.feng.boot.admin.domain.result.Result;
-import com.feng.boot.admin.domain.result.R;
 import com.feng.boot.admin.project.system.permission.model.dto.PermissionDTO;
 import com.feng.boot.admin.project.system.permission.model.entity.PermissionEntity;
 import com.feng.boot.admin.project.system.permission.model.query.PermissionParams;
+import com.feng.boot.admin.domain.controller.SuperSimpleBaseController;
+import com.feng.boot.admin.domain.result.Result;
+import com.feng.boot.admin.domain.result.R;
+import com.feng.boot.admin.project.system.permission.service.IPermissionService;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;

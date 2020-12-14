@@ -1,8 +1,8 @@
 package com.feng.boot.admin.project.system.quartz.service;
 
+import com.feng.boot.admin.project.system.quartz.model.entity.JobEntity;
 import com.feng.boot.admin.domain.service.ISuperBaseService;
 import com.feng.boot.admin.project.system.quartz.model.dto.JobDTO;
-import com.feng.boot.admin.project.system.quartz.model.entity.JobEntity;
 import com.feng.boot.admin.project.system.quartz.model.query.JobParams;
 
 /**

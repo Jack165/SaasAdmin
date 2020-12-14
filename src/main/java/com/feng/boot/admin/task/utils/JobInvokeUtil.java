@@ -1,13 +1,13 @@
 package com.feng.boot.admin.task.utils;
 
-import com.feng.boot.admin.commons.utils.JsonUtils;
 import com.feng.boot.admin.task.domain.JobInvokeInfo;
-import com.hb0730.commons.json.exceptions.JsonException;
-import com.hb0730.commons.lang.collection.CollectionUtils;
-import com.hb0730.commons.lang.convert.ConverterRegistry;
-import com.hb0730.commons.lang.reflect.ReflectUtils;
-import com.hb0730.commons.spring.BeanUtils;
-import com.hb0730.commons.spring.SpringContextUtils;
+import com.feng.commons.json.exceptions.JsonException;
+import com.feng.commons.json.utils.Jsons;
+import com.feng.commons.lang.collection.CollectionUtils;
+import com.feng.commons.lang.convert.ConverterRegistry;
+import com.feng.commons.lang.reflect.ReflectUtils;
+import com.feng.commons.spring.BeanUtils;
+import com.feng.commons.spring.SpringContextUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.annotation.Nonnull;
@@ -107,8 +107,7 @@ public class JobInvokeUtil {
 
     private static List<Object[]> getMethodParams(String targetParams) throws ClassNotFoundException, JsonException {
         List<Object[]> classs = new LinkedList<>();
-        @SuppressWarnings({"unchecked"})
-        Map<String, Object> map = JsonUtils.getJson().jsonToObject(targetParams, Map.class);
+        Map<String, Object> map = Jsons.JSONS.jsonToObject(targetParams, Map.class);
         if (CollectionUtils.isEmpty(map)) {
             return classs;
         }
