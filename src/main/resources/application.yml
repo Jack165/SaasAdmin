@@ -95,7 +95,7 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 boot:
   admin:
-    name: boot-admin
+    name: saas-admin
     version: 3.0.0
     copyright-year: 2020
     demo-enabled: false

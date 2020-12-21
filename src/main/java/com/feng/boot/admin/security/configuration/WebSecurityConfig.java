@@ -23,7 +23,7 @@ import org.springframework.web.filter.CorsFilter;
 /**
  * spring security
  *
- * @author bing_huang
+ * @author feng
  * @since 3.0.0
  */
 @EnableWebSecurity
