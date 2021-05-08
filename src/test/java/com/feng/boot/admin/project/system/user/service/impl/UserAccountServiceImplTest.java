@@ -6,7 +6,7 @@ import com.feng.boot.admin.project.ProjectTest;
 import com.feng.boot.admin.project.system.user.model.query.UserAccountParams;
 import com.feng.boot.admin.project.system.user.model.dto.UserAccountDTO;
 import com.feng.boot.admin.project.system.user.service.IUserAccountService;
-import com.feng.commons.spring.SpringContextUtils;
+import com.feng.boot.admin.commons.spring.SpringContextUtils;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

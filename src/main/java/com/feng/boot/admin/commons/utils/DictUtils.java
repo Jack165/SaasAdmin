@@ -2,9 +2,9 @@ package com.feng.boot.admin.commons.utils;
 
 import com.feng.boot.admin.project.system.dict.model.vo.DictVO;
 import com.feng.boot.admin.project.system.dict.service.IDictService;
-import com.feng.commons.json.exceptions.JsonException;
-import com.feng.commons.json.utils.Jsons;
-import com.feng.commons.spring.SpringContextUtils;
+import com.feng.boot.admin.commons.json.exceptions.JsonException;
+import com.feng.boot.admin.commons.json.utils.Jsons;
+import com.feng.boot.admin.commons.spring.SpringContextUtils;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 

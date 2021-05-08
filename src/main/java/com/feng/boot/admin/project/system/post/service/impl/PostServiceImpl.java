@@ -13,8 +13,8 @@ import com.feng.boot.admin.project.system.post.service.IPostService;
 import com.feng.boot.admin.commons.utils.QueryWrapperUtils;
 import com.feng.boot.admin.domain.service.impl.SuperBaseServiceImpl;
 import com.feng.boot.admin.project.system.post.mapper.IPostMapper;
-import com.feng.commons.lang.StringUtils;
-import com.feng.commons.spring.BeanUtils;
+import com.feng.boot.admin.commons.lang.StringUtils;
+import com.feng.boot.admin.commons.spring.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

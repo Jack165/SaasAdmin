@@ -25,11 +25,11 @@ import com.feng.boot.admin.domain.service.impl.SuperBaseServiceImpl;
 import com.feng.boot.admin.event.menu.MenuEvent;
 import com.feng.boot.admin.project.system.menu.mapper.IMenuMapper;
 import com.feng.boot.admin.project.system.menu.service.IMenuService;
-import com.feng.commons.cache.Cache;
-import com.feng.commons.json.utils.Jsons;
-import com.feng.commons.lang.StringUtils;
-import com.feng.commons.lang.collection.CollectionUtils;
-import com.feng.commons.spring.BeanUtils;
+import com.feng.boot.admin.commons.cache.Cache;
+import com.feng.boot.admin.commons.json.utils.Jsons;
+import com.feng.boot.admin.commons.lang.StringUtils;
+import com.feng.boot.admin.commons.lang.collection.CollectionUtils;
+import com.feng.boot.admin.commons.spring.BeanUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.context.ApplicationEventPublisher;
@@ -43,7 +43,7 @@ import java.io.Serializable;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static com.feng.commons.lang.constants.PathConst.ROOT_PATH;
+import static com.feng.boot.admin.commons.lang.constants.PathConst.ROOT_PATH;
 
 /**
  * 菜单  服务实现类

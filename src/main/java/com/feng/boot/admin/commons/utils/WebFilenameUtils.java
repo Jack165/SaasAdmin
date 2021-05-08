@@ -1,6 +1,6 @@
 package com.feng.boot.admin.commons.utils;
 
-import com.feng.commons.lang.StringUtils;
+import com.feng.boot.admin.commons.lang.StringUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;

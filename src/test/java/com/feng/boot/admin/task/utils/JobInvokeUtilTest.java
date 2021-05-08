@@ -1,8 +1,8 @@
 package com.feng.boot.admin.task.utils;
 
 import com.feng.boot.admin.task.domain.JobInvokeInfo;
-import com.feng.commons.json.exceptions.JsonException;
-import com.feng.commons.spring.SpringContextUtils;
+import com.feng.boot.admin.commons.json.exceptions.JsonException;
+import com.feng.boot.admin.commons.spring.SpringContextUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

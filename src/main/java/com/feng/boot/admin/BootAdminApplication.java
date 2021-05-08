@@ -1,6 +1,6 @@
 package com.feng.boot.admin;
 
-import com.feng.commons.spring.SpringContextUtils;
+import com.feng.boot.admin.commons.spring.SpringContextUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;

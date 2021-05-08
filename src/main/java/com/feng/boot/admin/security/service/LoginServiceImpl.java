@@ -9,7 +9,7 @@ import com.feng.boot.admin.manager.factory.AsyncFactory;
 import com.feng.boot.admin.security.model.LoginUser;
 import com.feng.boot.admin.security.model.User;
 import com.feng.boot.admin.token.ITokenService;
-import com.feng.commons.spring.BeanUtils;
+import com.feng.boot.admin.commons.spring.BeanUtils;
 import lombok.AllArgsConstructor;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;

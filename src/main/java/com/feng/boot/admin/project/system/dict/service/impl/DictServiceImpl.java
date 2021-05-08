@@ -18,7 +18,7 @@ import com.feng.boot.admin.project.system.dict.model.query.DictParams;
 import com.feng.boot.admin.project.system.dict.model.vo.DictVO;
 import com.feng.boot.admin.project.system.dict.service.IDictEntryService;
 import com.feng.boot.admin.project.system.dict.service.IDictService;
-import com.feng.commons.lang.StringUtils;
+import com.feng.boot.admin.commons.lang.StringUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;

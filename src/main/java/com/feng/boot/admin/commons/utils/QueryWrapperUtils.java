@@ -6,8 +6,8 @@ import com.feng.boot.admin.commons.enums.SortTypeEnum;
 import com.feng.boot.admin.domain.model.entity.BaseDomain;
 import com.feng.boot.admin.domain.model.entity.BusinessDomain;
 import com.feng.boot.admin.domain.model.query.BaseParams;
-import com.feng.commons.lang.collection.CollectionUtils;
-import com.feng.commons.spring.BeanUtils;
+import com.feng.boot.admin.commons.lang.collection.CollectionUtils;
+import com.feng.boot.admin.commons.spring.BeanUtils;
 import org.springframework.lang.NonNull;
 
 import java.util.List;

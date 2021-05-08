@@ -2,7 +2,7 @@ package com.feng.boot.admin.security.service;
 
 import com.feng.boot.admin.annotation.PreAuth;
 import com.feng.boot.admin.security.utils.SecurityUtils;
-import com.feng.commons.lang.StringUtils;
+import com.feng.boot.admin.commons.lang.StringUtils;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.stereotype.Service;

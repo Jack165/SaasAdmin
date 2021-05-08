@@ -1,7 +1,7 @@
 package com.feng.boot.admin.domain.model;
 
-import com.feng.commons.lang.collection.CollectionUtils;
-import com.feng.commons.spring.BeanUtils;
+import com.feng.boot.admin.commons.lang.collection.CollectionUtils;
+import com.feng.boot.admin.commons.spring.BeanUtils;
 import org.apache.commons.lang3.reflect.TypeUtils;
 
 import java.lang.reflect.Type;

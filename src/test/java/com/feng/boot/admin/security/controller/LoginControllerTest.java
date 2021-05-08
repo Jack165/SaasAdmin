@@ -1,6 +1,6 @@
 package com.feng.boot.admin.security.controller;
 
-import com.feng.commons.json.gson.GsonUtils;
+import com.feng.boot.admin.commons.json.gson.GsonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;

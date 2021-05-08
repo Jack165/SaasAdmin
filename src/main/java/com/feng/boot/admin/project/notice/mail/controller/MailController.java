@@ -9,7 +9,7 @@ import com.feng.boot.admin.domain.result.Result;
 import com.feng.boot.admin.project.notice.mail.model.dto.MailDTO;
 import com.feng.boot.admin.project.notice.mail.model.dto.MailTestDTO;
 import com.feng.boot.admin.project.notice.mail.service.IMailService;
-import com.feng.commons.mail.spring.service.MailService;
+import com.feng.boot.admin.commons.mail.spring.service.MailService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;

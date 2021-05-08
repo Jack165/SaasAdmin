@@ -1,8 +1,8 @@
 package com.feng.boot.admin.token;
 
 import com.feng.boot.admin.security.model.User;
-import com.feng.commons.encrypt.digest.MD5Utils;
-import com.feng.commons.lang.constants.Charsets;
+import com.feng.boot.admin.commons.encrypt.digest.MD5Utils;
+import com.feng.boot.admin.commons.lang.constants.Charsets;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.servlet.http.HttpServletRequest;

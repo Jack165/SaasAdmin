@@ -9,7 +9,7 @@ import com.feng.boot.admin.project.system.option.model.dto.OptionDTO;
 import com.feng.boot.admin.project.system.option.model.entity.OptionEntity;
 import com.feng.boot.admin.project.system.option.model.query.OptionParams;
 import com.feng.boot.admin.project.system.option.service.IOptionService;
-import com.feng.commons.spring.BeanUtils;
+import com.feng.boot.admin.commons.spring.BeanUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;

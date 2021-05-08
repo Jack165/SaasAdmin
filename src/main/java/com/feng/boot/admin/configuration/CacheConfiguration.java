@@ -1,9 +1,9 @@
 package com.feng.boot.admin.configuration;
 
-import com.feng.commons.cache.Cache;
-import com.feng.commons.cache.impl.remote.RedisSpringDataCache;
-import com.feng.commons.cache.support.redis.springdata.RedisSpringDataCacheConfig;
-import com.feng.commons.cache.support.serial.impl.Jackson2JsonCacheWrapperSerializer;
+import com.feng.boot.admin.commons.cache.Cache;
+import com.feng.boot.admin.commons.cache.impl.remote.RedisSpringDataCache;
+import com.feng.boot.admin.commons.cache.support.redis.springdata.RedisSpringDataCacheConfig;
+import com.feng.boot.admin.commons.cache.support.serial.impl.Jackson2JsonCacheWrapperSerializer;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

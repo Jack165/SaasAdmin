@@ -1,7 +1,7 @@
 package com.feng.boot.admin.project.system.option.service.impl;
 
 import com.feng.boot.admin.project.system.option.service.IOptionService;
-import com.feng.commons.spring.SpringContextUtils;
+import com.feng.boot.admin.commons.spring.SpringContextUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Before;

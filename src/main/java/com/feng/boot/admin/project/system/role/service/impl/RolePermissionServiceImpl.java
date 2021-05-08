@@ -9,7 +9,7 @@ import com.feng.boot.admin.domain.service.impl.BaseServiceImpl;
 import com.feng.boot.admin.project.system.role.mapper.IRolePermissionMapper;
 import com.feng.boot.admin.project.system.role.model.entity.RolePermissionEntity;
 import com.feng.boot.admin.project.system.role.service.IRolePermissionService;
-import com.feng.commons.lang.collection.CollectionUtils;
+import com.feng.boot.admin.commons.lang.collection.CollectionUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

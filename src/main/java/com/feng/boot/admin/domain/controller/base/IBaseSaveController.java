@@ -12,7 +12,7 @@ import com.feng.boot.admin.domain.model.dto.BaseDTO;
 import com.feng.boot.admin.domain.model.entity.BaseDomain;
 import com.feng.boot.admin.domain.result.Result;
 import com.feng.boot.admin.domain.result.R;
-import com.feng.commons.spring.ValidatorUtils;
+import com.feng.boot.admin.commons.spring.ValidatorUtils;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;

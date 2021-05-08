@@ -9,7 +9,7 @@ import com.feng.boot.admin.project.monitor.operation.model.query.OperLogParams;
 import com.feng.boot.admin.project.monitor.operation.service.IOperLogService;
 import com.feng.boot.admin.commons.utils.QueryWrapperUtils;
 import com.feng.boot.admin.domain.service.impl.SuperBaseServiceImpl;
-import com.feng.commons.lang.StringUtils;
+import com.feng.boot.admin.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

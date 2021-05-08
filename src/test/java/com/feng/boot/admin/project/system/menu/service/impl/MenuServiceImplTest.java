@@ -7,7 +7,7 @@ import com.feng.boot.admin.project.system.menu.model.entity.MenuEntity;
 import com.feng.boot.admin.project.system.menu.model.vo.MenuPermissionVO;
 import com.feng.boot.admin.project.system.menu.model.vo.VueMenuVO;
 import com.feng.boot.admin.project.system.menu.service.IMenuService;
-import com.feng.commons.spring.BeanUtils;
+import com.feng.boot.admin.commons.spring.BeanUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;

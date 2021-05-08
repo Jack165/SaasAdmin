@@ -11,7 +11,7 @@ import com.feng.boot.admin.security.service.PermissionService;
 import com.feng.boot.admin.domain.model.entity.BaseDomain;
 import com.feng.boot.admin.domain.result.Result;
 import com.feng.boot.admin.domain.result.R;
-import com.feng.commons.lang.collection.CollectionUtils;
+import com.feng.boot.admin.commons.lang.collection.CollectionUtils;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

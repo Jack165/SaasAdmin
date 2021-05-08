@@ -10,7 +10,7 @@ import com.feng.boot.admin.commons.utils.QueryWrapperUtils;
 import com.feng.boot.admin.domain.service.impl.SuperBaseServiceImpl;
 import com.feng.boot.admin.project.system.permission.mapper.IPermissionMapper;
 import com.feng.boot.admin.project.system.permission.service.IPermissionService;
-import com.feng.commons.lang.StringUtils;
+import com.feng.boot.admin.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 

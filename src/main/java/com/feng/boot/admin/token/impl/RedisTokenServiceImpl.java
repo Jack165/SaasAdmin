@@ -5,12 +5,12 @@ import com.feng.boot.admin.security.model.User;
 import com.feng.boot.admin.token.AbstractTokenService;
 import com.google.common.collect.Maps;
 import com.feng.boot.admin.token.configuration.TokenProperties;
-import com.feng.commons.cache.Cache;
-import com.feng.commons.json.exceptions.JsonException;
-import com.feng.commons.json.utils.Jsons;
-import com.feng.commons.lang.StringUtils;
-import com.feng.commons.lang.collection.CollectionUtils;
-import com.feng.commons.lang.date.DateUtils;
+import com.feng.boot.admin.commons.cache.Cache;
+import com.feng.boot.admin.commons.json.exceptions.JsonException;
+import com.feng.boot.admin.commons.json.utils.Jsons;
+import com.feng.boot.admin.commons.lang.StringUtils;
+import com.feng.boot.admin.commons.lang.collection.CollectionUtils;
+import com.feng.boot.admin.commons.lang.date.DateUtils;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.core.userdetails.UserDetails;
 

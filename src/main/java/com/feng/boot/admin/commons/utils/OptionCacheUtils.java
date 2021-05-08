@@ -1,9 +1,9 @@
 package com.feng.boot.admin.commons.utils;
 
 import com.feng.boot.admin.commons.constant.RedisConstant;
-import com.feng.commons.cache.Cache;
-import com.feng.commons.cache.impl.remote.RedisSpringDataCache;
-import com.feng.commons.spring.SpringContextUtils;
+import com.feng.boot.admin.commons.cache.Cache;
+import com.feng.boot.admin.commons.cache.impl.remote.RedisSpringDataCache;
+import com.feng.boot.admin.commons.spring.SpringContextUtils;
 import org.springframework.lang.NonNull;
 import org.springframework.util.Assert;
 

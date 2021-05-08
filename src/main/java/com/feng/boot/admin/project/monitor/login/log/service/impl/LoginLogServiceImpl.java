@@ -9,7 +9,7 @@ import com.feng.boot.admin.project.monitor.login.log.model.dto.LoginLogDTO;
 import com.feng.boot.admin.project.monitor.login.log.model.entity.LoginLogEntity;
 import com.feng.boot.admin.project.monitor.login.log.model.query.LoginLogParams;
 import com.feng.boot.admin.project.monitor.login.log.service.ILoginLogService;
-import com.feng.commons.lang.StringUtils;
+import com.feng.boot.admin.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

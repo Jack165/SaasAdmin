@@ -10,8 +10,8 @@ import com.feng.boot.admin.domain.model.dto.BaseDTO;
 import com.feng.boot.admin.domain.model.entity.BaseDomain;
 import com.feng.boot.admin.domain.model.query.BaseParams;
 import com.feng.boot.admin.domain.service.ISuperBaseService;
-import com.feng.commons.spring.BeanUtils;
-import com.feng.commons.spring.ValidatorUtils;
+import com.feng.boot.admin.commons.spring.BeanUtils;
+import com.feng.boot.admin.commons.spring.ValidatorUtils;
 import org.springframework.lang.NonNull;
 import org.springframework.transaction.annotation.Transactional;
 

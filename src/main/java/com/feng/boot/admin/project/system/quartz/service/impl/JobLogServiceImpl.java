@@ -8,7 +8,7 @@ import com.feng.boot.admin.commons.utils.QueryWrapperUtils;
 import com.feng.boot.admin.domain.service.impl.SuperBaseServiceImpl;
 import com.feng.boot.admin.project.system.quartz.model.dto.JobLogDTO;
 import com.feng.boot.admin.project.system.quartz.service.IJobLogService;
-import com.feng.commons.lang.StringUtils;
+import com.feng.boot.admin.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Nonnull;

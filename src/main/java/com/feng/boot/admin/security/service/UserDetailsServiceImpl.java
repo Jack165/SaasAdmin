@@ -4,7 +4,7 @@ import com.feng.boot.admin.exceptions.UsernameNotFoundException;
 import com.feng.boot.admin.project.system.user.model.dto.UserDTO;
 import com.feng.boot.admin.project.system.user.service.IUserInfoService;
 import com.feng.boot.admin.security.model.User;
-import com.feng.commons.spring.BeanUtils;
+import com.feng.boot.admin.commons.spring.BeanUtils;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -2,8 +2,8 @@ package com.feng.boot.admin.commons.utils;
 
 import com.feng.boot.admin.commons.constant.RedisConstant;
 import com.feng.boot.admin.project.system.dict.model.vo.DictVO;
-import com.feng.commons.cache.impl.remote.RedisSpringDataCache;
-import com.feng.commons.spring.SpringContextUtils;
+import com.feng.boot.admin.commons.cache.impl.remote.RedisSpringDataCache;
+import com.feng.boot.admin.commons.spring.SpringContextUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.lang.NonNull;
